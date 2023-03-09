@@ -11,7 +11,13 @@ import { zkSyncTestnet } from "@wagmi/chains";
 import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { connectorsForWallets } from '@rainbow-me/rainbowkit';
-import { argentWallet, injectedWallet, rainbowWallet, walletConnectWallet } from "@rainbow-me/rainbowkit/wallets";
+import {
+  argentWallet,
+  injectedWallet,
+  rainbowWallet,
+  walletConnectWallet,
+  metaMaskWallet,
+} from "@rainbow-me/rainbowkit/wallets";
 
 
 import { useIsMounted } from '../hooks';
@@ -21,7 +27,7 @@ const { chains, provider } = configureChains(
   [zkSyncTestnet],
   [
     jsonRpcProvider({
-      rpc: () => ({ http: "https://zksync2-testnet.zksync.dev" }),
+      rpc: () => ({ http: "https://zksync2-testnet.zksync.dev	" }),
     }),
     publicProvider(),
   ]
@@ -40,6 +46,7 @@ const connectors = connectorsForWallets([
       injectedWallet({ chains }),
       rainbowWallet({ chains }),
       walletConnectWallet({ chains }),
+      metaMaskWallet({ chains })
     ],
   },
 ]);

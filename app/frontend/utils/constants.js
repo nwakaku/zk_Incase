@@ -4,7 +4,7 @@ import erc20abi from "../contracts/mockToken.json";
 export const contractAbi = contractStuff;
 export const ercTokenAbi = erc20abi;
 
-export const mockTokenAddress = "0xF49705A7362d63178aC0b960d480C59076311dD5";
+export const mockTokenAddress = "0xe3253d2Abd5A25f07b5984EF92555e139eA36a5B";
 export const ERC721MockAddress = '0x9AfFDF8A6b23f42d25EEFF5d79d2b3DEf5092D0E';
 export const ERC1155MockAddress = '0xAB45D1cDDf5e32781071c94127c519510819B422';
 
@@ -12,23 +12,8 @@ export const ERC1155MockAddress = '0xAB45D1cDDf5e32781071c94127c519510819B422';
 // export const contractAddress = "0xEA5228D57Cf4B8D36BD347ddEA4f7aC95dd05449";
 // export const contractAddress = "0x6C92Eee89D9f68535b0da13875F4B23d6EBEac32";
 
-export const contractAddress = "0x10B78dafaB8cc377A065A02aF5749B6b604FF725";
+export const contractAddress = "0x18107cd083DD29ba221A780a30ed98122bc2584D";
 
-// 
-// export const contractAddress = "0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD";
-
-
-//goerli
-export const contractAddress_goerli = "0x04Fd1EE01c523E0BC2feE732FDC29556B082F20C";
-
-// Mumbai contract Address
-export const contractAddress_mumbai = "0x6C92Eee89D9f68535b0da13875F4B23d6EBEac32";
-
-// Hyperspace Contract Address
-export const contractAddress_hyperspace = ""
-
-// Fantom Contract Address
-export const contractAddress_fantom = "0xA28B5491e946CDB217162ec01426BC27f4AeF0ED";
 
 export const contractConfig = {
   address: contractAddress,

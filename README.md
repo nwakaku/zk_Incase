@@ -6,8 +6,8 @@ Use it was a living will or as a backup for a lost private keys, trust that your
 
 
 
- [Video Demo](https://youtu.be/78IzqqqIo4o) | 
- [Live Site](https://incase.vercel.app) | 
+ [Video Demo]() | 
+ [Live Site]() | 
 
  | ZKsync Era | ------ Deployments ------ |
  | --------------------------------------------- | ------------------------------------------------------------------ |
@@ -37,11 +37,11 @@ This project is built with the following open source libraries, frameworks and l
 Connect your wallet and "Add new beneficiary"
 On the model pop up you will fill in the following
 
-`Token Address` - (token, ERC1155(FTM Version) or FTM NFTs) That you want to send to the beneficiary.
+`Token Address` - (token, ERC1155 or ERC721) That you want to send to the beneficiary.
 
 `Beneficiary` - Set the address of where you want the above asset sent to.  Starts with 0x..
 
-`Amount` - For FTM tokens, set how many tokens.  For ERC721(FTM) set amount to 1
+`Amount` - For ERC20 tokens, set how many tokens.  For ERC721 set amount to 1
 
 `Token ID`- For tokens it is set to 0.  For ERC1155 and ERC721 tokens, token 1 and above specific to your NFT. 
 

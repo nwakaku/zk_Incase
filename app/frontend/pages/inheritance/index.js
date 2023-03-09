@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 
 import { useAccount, useContractRead } from "wagmi";
 import { ethers } from "ethers";
-import {  contractAbi } from "../../utils/constants";
+import { contractAbi, contractAddress } from "../../utils/constants";
 import { Header } from "../../components/header";
 
-const contractAddress = "0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD";
-const beneficiaryAddress = "0x42e8d1BBB613dc63A6fDbF39B0b016E78dF4E4f6";
+const contractAddressi = contractAddress;
+// const beneficiaryAddress = "0x42e8d1BBB613dc63A6fDbF39B0b016E78dF4E4f6";
 
 function Index() {
   const { address, isConnected } = useAccount();
@@ -19,7 +19,7 @@ function Index() {
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
         const contract = new ethers.Contract(
-          contractAddress,
+          contractAddressi,
           contractAbi,
           signer
         );
