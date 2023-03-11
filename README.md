@@ -1,8 +1,54 @@
 # Inxase
 
-Set beneficiaries to the assets in your wallet.  tokens, ERC-1115 or  NFTs will automatically transfer upon death or loss of keys.
+```Set beneficiaries to the assets in your wallet.  tokens, ERC-1115 or  NFTs will automatically transfer upon death or loss of keys.
+```
 
 Use it was a living will or as a backup for a lost private keys, trust that your assets are not lost forever in your wallet
+
+## documentation on how to install the integration on a dapp.
+```
+Using RainbowKit is One of the ways for easy and secure Integration of argent wallet by Customizing the wallet list
+```
+
+Individual wallets from '@rainbow-me/rainbowkit/wallets' can be imported, together with the connectorsForWallets function, to create your own list of wallets and connectors. This way, you have complete control over which wallets appear and in what sequence.
+
+For example, you may specify that just argent Wallet and generic fallback wallets are displayed.
+
+```javascript
+import { connectorsForWallets } from '@rainbow-me/rainbowkit';
+import {
+  argentWallet,
+  injectedWallet,
+  rainbowWallet,
+  walletConnectWallet,
+  metaMaskWallet,
+} from "@rainbow-me/rainbowkit/wallets";
+import { configureChains, mainnet } from 'wagmi';
+import { alchemyProvider } from 'wagmi/providers/alchemy';
+import { publicProvider } from 'wagmi/providers/public';
+
+const { chains, provider } = configureChains(
+  [zkSyncTestnet],
+  [
+    jsonRpcProvider({
+      rpc: () => ({ http: "https://zksync2-testnet.zksync.dev	" }),
+    }),
+    publicProvider(),
+  ]
+);
+
+const connectors = connectorsForWallets([
+  {
+    groupName: "Recommended",
+    wallets: [ 
+      argentWallet({ chains }),
+      rainbowWallet({ chains }),
+      walletConnectWallet({ chains }),
+      metaMaskWallet({ chains })
+    ],
+  },
+]);
+```
 
 
 
@@ -14,6 +60,46 @@ Use it was a living will or as a backup for a lost private keys, trust that your
  | [Contract Address](https://testnet.ftmscan.com/address/0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD#code) | 0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD |
  | [mockTokenAddress](https://testnet.ftmscan.com/address/0xF49705A7362d63178aC0b960d480C59076311dD5#code) | 0xF49705A7362d63178aC0b960d480C59076311dD5 |
 
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/nwakaku/zk_Incase.git
+```
+
+Go to the project directory
+
+```bash
+  cd app
+```
+
+```bash
+  cd frontend
+```
+
+Install dependencies
+
+```bash
+  yarn
+```
+
+Start the server
+
+```bash
+  yarn run dev
+```
+
+
+## Authors
+
+- [@Wisdom_Chris](https://www.github.com/nwakaku)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Technologies
 
@@ -53,9 +139,11 @@ When you set the beneficiary, an NFT with the details is sent the wallet address
 You can remove all beneficiaries with the `remove beneficiaries` button that will clear out beneficiaries and execution data.
 
 
-## To Work on
+## Roadmap
 
-Drop down options for existing tokens in wallet (Pull wallet assets)
-Give a grace period before execution
-Send a reminder to email/calendar when check in date is coming up
+- Drop down options for existing tokens in wallet (Pull wallet assets)
+
+- Give a grace period before execution
+
+- Send a reminder to email/calendar when check in date is coming up
 

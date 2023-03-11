@@ -52,7 +52,7 @@ const addLegacy = (props) => {
             >
               <button className="text-lg font-semibold bg-gray-200 py-3 px-8 self-start mx-3 border-none rounded-full">
                 {/* View Txn on Etherscan */}
-                View Txn on fantom
+                View Txn on zksync Explorer
               </button>
             </a>
             <button
