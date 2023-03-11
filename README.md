@@ -52,13 +52,13 @@ const connectors = connectorsForWallets([
 
 
 
- [Video Demo]() | 
- [Live Site]() | 
+ [Video Demo](https://vimeo.com/807134249) | 
+ [Live Site](https://zk-incase.vercel.app/dashboard) | 
 
  | ZKsync Era | ------ Deployments ------ |
  | --------------------------------------------- | ------------------------------------------------------------------ |
- | [Contract Address](https://testnet.ftmscan.com/address/0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD#code) | 0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD |
- | [mockTokenAddress](https://testnet.ftmscan.com/address/0xF49705A7362d63178aC0b960d480C59076311dD5#code) | 0xF49705A7362d63178aC0b960d480C59076311dD5 |
+ | [Contract Address](https://goerli.explorer.zksync.io/address/0x18107cd083DD29ba221A780a30ed98122bc2584D) | 0x18107cd083DD29ba221A780a30ed98122bc2584D |
+ | [mockTokenAddress](https://goerli.explorer.zksync.io/address/0xe3253d2Abd5A25f07b5984EF92555e139eA36a5B#code) | 0xe3253d2Abd5A25f07b5984EF92555e139eA36a5B |
 
 
 ## Run Locally
